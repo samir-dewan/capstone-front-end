@@ -1,5 +1,3 @@
-/** @format */
-
 //IMPORT MODULES
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
@@ -9,14 +7,14 @@ import Header from "./components/Header/Header";
 import Profile from "./components/Profile/Profile/Profile";
 import AddProfile from "./components/Profile/AddProfile/AddProfile";
 import EditProfile from "./components/Profile/EditProfile/EditProfile";
-import Connect from "./components/Connect";
+import Connect from "./components/Connect/Connect";
 import Chat from "./components/Chat/Chat/Chat";
 import Chatroom from "./components/Chat/Chatroom/Chatroom";
 import AddChatroom from "./components/Chat/AddChatroom/AddChatroom";
 import Event from "./components/Meet/Event/Event";
 import AddEvent from "./components/Meet/AddEvent/AddEvent";
 import EditEvent from "./components/Meet/EditEvent/EditEvent";
-
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
@@ -25,12 +23,7 @@ export default function App() {
       <Switch>
         <Redirect from="/" exact to="/user" />
         <Route
-          path="/user/:userid"
-          exact
-          render={(routerProps) => <Profile {...routerProps} />}
-        />
-        <Route
-          path="/user/:userid/add"
+          path="/user/add"
           exact
           render={(routerProps) => <AddProfile {...routerProps} />}
         />
@@ -38,6 +31,11 @@ export default function App() {
           path="/user/:userid/edit"
           exact
           render={(routerProps) => <EditProfile {...routerProps} />}
+        />
+        <Route
+          path="/user/:userid"
+          exact
+          render={(routerProps) => <Profile {...routerProps} />}
         />
         <Route
           path="/connect"
