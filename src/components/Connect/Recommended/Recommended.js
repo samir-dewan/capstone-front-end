@@ -33,4 +33,4 @@ const Recommended = async ({ routerProps }) => {
   }
 };
 
-export default SentConnectionOut;
+export default Recommended;
