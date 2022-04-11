@@ -22,6 +22,12 @@ We are still in progress with all of these bits, updates will be recorded at the
 
 This app currently uses react, knex, axios, postcode.io, mapbox.gl and react-mapbox-gl, with an SQL database on the back end. I'm planning on adding sockets.io to the mix when chat functionality comes to life.
 
+4. Progress
+
+11/04: First readme add. Connect functionality added, but still needs some more functionality in terms of connecting to specific users. Profile adding is next up on the list!
+
+5. Other bits that come with React as charged
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
