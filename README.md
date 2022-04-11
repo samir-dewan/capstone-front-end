@@ -1,3 +1,27 @@
+1. Shoutouts and Acknowledgements
+
+Couldn't be making this without the help of Brainstation and my amazing Educators and Teaching Assistants - Noor (Nooruddin), Joe (Scribbio), Felipe (felipefranco-ldn), and Sammy! You guys have been amazing and have really pushed me into a creative but technical sphere.
+
+2. What's this then?
+
+The aim of this project, currently called Bondo but very subject to change as it sounds like a glue company, is to get first generation migrants and expats connected through a networking platform. They can find people from similar walks to life and connect to them, chat to them, and organise and go to events with them.
+
+Key bits of functionality include:
+
+A log-in page, where you can add your details and this is stored in a warehouse in the back-end.
+
+A connect page, where you can see your own location, click on markers of people next to you, and connect with them.
+
+A chat page, where you can talk to people that you've connected to.
+
+A meet page, where you can organise and pin events next to each other and meet up with people close by.
+
+We are still in progress with all of these bits, updates will be recorded at the bottom of this readme.
+
+3. Technologies used
+
+This app currently uses react, knex, axios, postcode.io, mapbox.gl and react-mapbox-gl, with an SQL database on the back end. I'm planning on adding sockets.io to the mix when chat functionality comes to life.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
