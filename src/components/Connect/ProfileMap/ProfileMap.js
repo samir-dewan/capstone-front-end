@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import axios from 'axios';
+import "./ProfileMap.scss";
+import profilePic from "../../../assets/blankprofilepic.jpeg";
 
 export default function ProfileMap() {
   const [viewport, setViewport] = useState({
     latitude: 51.349577,
     longitude: -0.138444,
     width: "100vw",
-    height: "100vh",
+    height: "77vh",
     zoom: 10,
   });
   const [selectedProfile, setSelectedProfile] = useState(null);
@@ -48,13 +50,13 @@ export default function ProfileMap() {
             longitude={profile.longitude}
           >
             <button
-              className="marker-btn"
+              className="marker__button"
               onClick={(e) => {
                 e.preventDefault();
                 setSelectedProfile(profile);
               }}
             >
-              <img src="/leaf.svg" alt="Skate Park Icon" />
+              <img src="/leaf.svg" alt="Profile Image" />
             </button>
           </Marker>
         ))}
@@ -67,9 +69,12 @@ export default function ProfileMap() {
               setSelectedProfile(null);
             }}
           >
-            <div>
-              <h2>{`${selectedProfile.firstName} ${selectedProfile.lastName}`}</h2>
-              <p>{selectedProfile.interests}</p>
+            <div className="popup__wrapper">
+              <p>{`${selectedProfile.firstName} ${selectedProfile.lastName}`}</p>
+              <p>{selectedProfile.townOfOrigin}</p>
+              <img className="popup__image" src={profilePic} />
+              <button>Profile</button>
+              <button>Connect</button>
             </div>
           </Popup>
         ) : null}

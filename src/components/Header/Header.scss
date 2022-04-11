@@ -9,11 +9,21 @@
         margin: 0;
     }
     &__logo{
-        max-height: 6rem;
+        max-height: 10rem;
         max-width: 15rem;
+        &:active{
+            background-color: sandybrown;
+        }
     }
     &__tab{
         max-height: 4rem;
         max-width: 4rem;
+        padding: 0.5rem;
+        &:hover{
+            border-bottom: 1px sandybrown solid;
+        }
+        &:active{
+            background-color: sandybrown;
+        }
     }
 }

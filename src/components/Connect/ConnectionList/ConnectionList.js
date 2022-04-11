@@ -9,12 +9,12 @@ import React from "react";
 
 const ConnectionList = () => {
   return (
-    <>
+    <div>
     <h2>Pending Requests</h2>
     <SentConnectionOut />
     <h2></h2>
     <BroughtConnectionIn />
-    </>
+    </div>
   );
 };
 

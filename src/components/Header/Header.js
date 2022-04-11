@@ -10,11 +10,11 @@ import "./Header.scss";
 export default function Header() {
   return (
     <div className="header">
-      <div className="header__wrapper">
-        <img className="header__logo" src={mainLogo}/>
-        <img className="header__tab" src={connect}/>
-        <img className="header__tab" src={meet}/>
-        <img className="header__tab" src={chat}/>
+      <div className="header__wrapper">      
+        <Link to="/home"><img className="header__logo" src={mainLogo} /></Link>
+        <Link to="/connect"><img className="header__tab" src={connect} /></Link>
+        <Link to="/meet"><img className="header__tab" src={meet} /></Link>
+        <Link to="/chat"><img className="header__tab" src={chat} /></Link>
       </div>
     </div>
   );

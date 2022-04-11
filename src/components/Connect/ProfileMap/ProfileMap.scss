@@ -1,17 +1,29 @@
-.big{
-    color:red;
-    font-size: 50vw;
-}
-
-.map{
-    &__button{
-        width: 100000px;
-        height: 100000px;
-    }
+.popup{
     &__wrapper{
-        div {
-            width: 500px;
-            height: 400px;
-        }
+        border-radius: 1rem;
+        background-color: #FBEBCF;
+        padding: 0;
+        margin: 0;
+    }
+    &__image{
+        height: 2rem;
+        width: 2rem;
+        border-radius: 100%;
+    }
+}
+.marker{
+    &__button{
+        border-radius: 100%;
+        border: 0.1px gray solid;
+    }
+}
+.mapboxgl-popup {
+    &-content{
+    background: #FBEBCF !important;
+    padding: 0.5rem !important;
+    border-radius: 0.4rem !important;
+    }
+    &-tip{
+        display: none;
     }
 }
