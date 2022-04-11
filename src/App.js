@@ -21,7 +21,7 @@ export default function App() {
     <>
       <Header />
       <Switch>
-        <Redirect from="/" exact to="/user" />
+        <Redirect from="/" exact to="/connect" />
         <Route
           path="/user/add"
           exact

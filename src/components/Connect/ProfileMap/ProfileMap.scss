@@ -1,0 +1,17 @@
+.big{
+    color:red;
+    font-size: 50vw;
+}
+
+.map{
+    &__button{
+        width: 100000px;
+        height: 100000px;
+    }
+    &__wrapper{
+        div {
+            width: 500px;
+            height: 400px;
+        }
+    }
+}
