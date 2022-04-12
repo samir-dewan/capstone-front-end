@@ -1,0 +1,9 @@
+.add-profile{
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0.25rem;
+        flex-wrap: wrap;
+    }
+}
