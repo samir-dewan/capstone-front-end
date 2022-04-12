@@ -1,5 +1,18 @@
 .add-profile{
+    &__wrapper{
+        background-image: url("../../../assets/forest.jpeg");
+        padding: 1rem 0;
+    }
+    &__field{
+        display: flex;
+        gap: 0.4rem;
+    }
     &__form{
+        position: relative;
+        background-color: white;
+        width: 20rem;
+        padding: 0.5rem;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

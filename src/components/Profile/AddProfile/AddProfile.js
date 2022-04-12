@@ -42,18 +42,18 @@ export default function AddProfile() {
 
   return (
     <div className="add-profile__wrapper">
-      <h1>Enter Profile</h1>
       <form onSubmit={postData} className="add-profile__form">
-        <label>
-          First Name
-          <input name="firstName" className="add-profile__field" type="text" />
+        <h1>Enter Profile</h1>
+        <label className="add-profile__field">
+          First Name:
+          <input name="firstName" type="text" />
         </label>
-        <label>
-          Last Name
-          <input name="lastName" className="add-profile__field" type="text" />
+        <label className="add-profile__field">
+          Last Name:
+          <input name="lastName" type="text" />
         </label>
-        <label>
-          Nationality
+        <label className="add-profile__field">
+          Nationality:
           <select name="nationality" id="chooseNationality">
             <option value="blank"> </option>
             <option value="Bangladesh">Bangladesh</option>
@@ -61,28 +61,28 @@ export default function AddProfile() {
             <option value="Nigeria">Nigeria</option>
           </select>
         </label>
-        <label>
-          Town of Origin
+        <label className="add-profile__field">
+          Town of Origin:
           <input
             name="townOfOrigin"
             className="add-profile__field"
             type="text"
           />
         </label>
-        <label>
-          Address of Origin
+        <label className="add-profile__field">
+          Address of Origin:
           <input
             name="addressOfOrigin"
             className="add-profile__field"
             type="text"
           />
         </label>
-        <label>
-          E-mail
-          <input name="email" className="add-profile__field" type="text" />
+        <label className="add-profile__field">
+          E-mail:
+          <input name="email" type="text" />
         </label>
         <fieldset>
-          <legend>Interests</legend>
+          <legend>Interests:</legend>
           <input type="checkbox" name="interests" value="music" id="music" />
           <label for="music">Music</label>
           <br></br>
@@ -95,7 +95,12 @@ export default function AddProfile() {
           <input type="checkbox" name="interests" value="pub" id="pub" />
           <label for="pub">Pub</label>
           <br></br>
-          <input type="checkbox" name="interests" value="travelling" id="travelling" />
+          <input
+            type="checkbox"
+            name="interests"
+            value="travelling"
+            id="travelling"
+          />
           <label for="travelling">Travelling</label>
           <br></br>
           <input type="checkbox" name="interests" value="film" id="film" />
@@ -105,13 +110,12 @@ export default function AddProfile() {
           <label for="games">Games</label>
           <br></br>
         </fieldset>
-
         <label>
-          Birthday
+          Birthday:
           <input name="birthday" className="add-profile__field" type="text" />
         </label>
         <label>
-          Description
+          Description:
           <input
             name="description"
             className="add-profile__field"
@@ -119,11 +123,11 @@ export default function AddProfile() {
           />
         </label>
         <label>
-          Address
+          Address:
           <input name="address" className="add-profile__field" type="text" />
         </label>
         <label>
-          Postcode
+          Postcode:
           <input name="postcode" className="add-profile__field" type="text" />
         </label>
         <button type="submit">CONFIRM</button>
