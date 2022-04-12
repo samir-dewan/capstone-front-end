@@ -5,6 +5,7 @@ import mainLogo from "../../assets/Bondo.svg";
 import connect from "../../assets/Connect.svg";
 import meet from "../../assets/Meet.svg";
 import chat from "../../assets/Chat.svg";
+import profile from "../../assets/Profile.svg";
 import "./Header.scss";
 
 export default function Header() {
@@ -15,6 +16,7 @@ export default function Header() {
         <Link to="/connect"><img className="header__tab" src={connect} /></Link>
         <Link to="/meet"><img className="header__tab" src={meet} /></Link>
         <Link to="/chat"><img className="header__tab" src={chat} /></Link>
+        <Link to="/user/add"><img className="header__tab" src={profile} /></Link>
       </div>
     </div>
   );
